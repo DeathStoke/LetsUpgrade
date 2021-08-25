@@ -1,0 +1,10 @@
+#Write a python program to generate random 6 character OTP
+
+import random
+import string
+
+OTP = ''
+otp_list = list(string.ascii_letters + string.digits)
+for i in range(6):
+    OTP += random.choice(otp_list)
+print(OTP)
